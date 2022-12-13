@@ -1,0 +1,77 @@
+/* fonts */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+/* vue-app grid */
+
+#app {
+    display: grid;
+    grid-template-columns: minmax(350px, 700px);
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    padding: 5px;
+}
+
+/* gradient */
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* calc grid */
+
+.calc {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 200px));
+    grid-template-rows: repeat(7, minmax(70px, 100px));
+    justify-content: center;
+    
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.219);
+    padding: 20px;
+    grid-template-areas: 
+    "inp inp inp";
+}
+
+/* elem styles */
+
+.btn-num {
+    background-color: orangered;
+    border: 0px;
+}
+
+.btn-num:hover {
+    background-color: orange;
+}
+
+.btn-op {
+    background-color: darkblue;
+    border: 0px;
+}
+
+.btn-op:hover {
+    background-color: blue;
+}
+
+input {
+    grid-area: inp;
+    font-size: 20px;
+}
