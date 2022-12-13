@@ -1,2 +1,4 @@
-# calc-vue
-Simple calculator on Vue
+# Калькулятор на Vue
+Стандарный калькулятор, выполненый на vue.js.
+
+Деплой: https://pokaneprishel.github.io/calc-vue/
