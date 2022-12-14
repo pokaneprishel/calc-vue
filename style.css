@@ -64,7 +64,7 @@ body {
 }
 
 .btn-num:hover {
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .btn-op {
@@ -77,7 +77,7 @@ body {
 }
 
 .btn-op:hover {
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 input {
