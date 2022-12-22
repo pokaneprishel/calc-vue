@@ -9,7 +9,7 @@ body {
 
 #app {
     display: grid;
-    grid-template-columns: minmax(350px, 700px);
+    grid-template-columns: minmax(350px, 600px);
     grid-template-rows: 1fr;
     align-items: center;
     justify-content: center;
@@ -40,8 +40,8 @@ body {
 
 .calc {
     display: grid;
-    grid-template-columns: repeat(3, minmax(100px, 200px));
-    grid-template-rows: repeat(7, minmax(70px, 100px));
+    grid-template-columns: repeat(3, minmax(50px, 100px));
+    grid-template-rows: repeat(7, minmax(50px, 100px));
     justify-content: center;
     gap: 20px;
 
