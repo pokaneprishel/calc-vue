@@ -1,4 +1,4 @@
-# Калькулятор на Vue
-Стандарный калькулятор, выполненый на vue.js.
+# Калькулятор на Vue:fire:
+Стандарный калькулятор, выполненый на [Vue.js](https://vuejs.org/):green_circle:.
 
-Деплой: https://pokaneprishel.github.io/calc-vue/
+Сам калькулятор - [тык]():globe_with_meridians:.
