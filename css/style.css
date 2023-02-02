@@ -5,18 +5,31 @@ body {
     font-size: 30px;
 }
 
+h6 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+a {
+    display: grid;
+    justify-items: center;
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+}
+
 /* vue-app grid */
 
 #app {
     display: grid;
-    grid-template-columns: minmax(350px, 600px);
+    grid-template-columns: minmax(350px, 480px);
     grid-template-rows: 1fr;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #2c2c2c, #202020, #111111, #000000);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 100vh;
+    min-height: 100vh;
     padding: 5px;
 }
 
@@ -43,33 +56,37 @@ body {
     grid-template-columns: repeat(3, minmax(50px, 90px));
     grid-template-rows: repeat(7, minmax(50px, 90px));
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.219);
+    border: 1px white solid;
+    background-color: rgba(0, 0, 0, 0.055);
     padding: 20px;
     grid-template-areas:
         "inp inp inp";
+
+    margin-top: 20px;
 }
 
 /* elem styles */
 
 .btn-num {
-    background-color: white;
-    border: none;
-    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px white solid;
+    color: white;
     opacity: 1;
     transition: 0.3s;
     border-radius: 50%;
 }
 
 .btn-num:hover {
+    border: 1px blue solid;
     opacity: 0.7;
 }
 
 .btn-op {
-    background-color: blue;
-    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px red solid;
     color: white;
     opacity: 1;
     transition: 0.3s;
@@ -77,6 +94,7 @@ body {
 }
 
 .btn-op:hover {
+    border: 1px darkred solid;
     opacity: 0.7;
 }
 
@@ -86,4 +104,20 @@ input {
     border-radius: 20px;
     border: 0;
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px blue solid;
+    color: white;
+}
+
+/* mobile --v */
+
+@media screen and (max-width: 992px) {
+    .calc {
+        grid-template-columns: repeat(3, minmax(30px, 70px));
+        grid-template-rows: repeat(7, minmax(30px, 70px));
+    }
+
+    #app {
+        grid-template-columns: minmax(280px, 380px);
+    }
 }
