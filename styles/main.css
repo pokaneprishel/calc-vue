@@ -1,0 +1,145 @@
+/* fonts */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+h6 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+a {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}
+
+/* vue-app grid */
+#app {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(350px, 480px);
+      grid-template-columns: minmax(350px, 480px);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: linear-gradient(-45deg, #2c2c2c, #202020, #111111, #000000);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  min-height: 100vh;
+  padding: 5px;
+}
+
+/* gradient */
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* calc grid */
+.calc {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(50px, 90px))[3];
+      grid-template-columns: repeat(3, minmax(50px, 90px));
+  -ms-grid-rows: (minmax(50px, 90px))[7];
+      grid-template-rows: repeat(7, minmax(50px, 90px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  border-radius: 20px;
+  border: 1px white solid;
+  background-color: rgba(0, 0, 0, 0.055);
+  padding: 20px;
+      grid-template-areas: "inp inp inp";
+  margin-top: 20px;
+}
+
+/* elem styles */
+.btn-num {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px white solid;
+  color: white;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.btn-num:hover {
+  border: 1px blue solid;
+  opacity: 0.7;
+}
+
+.btn-op {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px red solid;
+  color: white;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.btn-op:hover {
+  border: 1px darkred solid;
+  opacity: 0.7;
+}
+
+input {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: inp;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px blue solid;
+  color: white;
+}
+
+/* mobile --v */
+@media screen and (max-width: 992px) {
+  .calc {
+    -ms-grid-columns: (minmax(30px, 70px))[3];
+        grid-template-columns: repeat(3, minmax(30px, 70px));
+    -ms-grid-rows: (minmax(30px, 70px))[7];
+        grid-template-rows: repeat(7, minmax(30px, 70px));
+  }
+  #app {
+    -ms-grid-columns: minmax(280px, 380px);
+        grid-template-columns: minmax(280px, 380px);
+  }
+}
+/*# sourceMappingURL=main.css.map */
